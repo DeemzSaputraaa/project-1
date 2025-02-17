@@ -9,24 +9,28 @@ const services = [
     description:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum sit tempore voluptates dignissimos rerum facilis quod ipsa delectus, fuga accusantium doloribus ut obcaecati eveniet earum nesciunt quas recusandae ex placeat. We help you create comprehensive business plans tailored to your specific needs and goals. lorem ipsum dolor sit amet.",
     image: "/cobalagi.png",
+    link: "/layanan/wifi",
   },
   {
     title: "CCTV",
     description:
       "Expert financial analysis to help you make informed decisions and optimize your business performance. Lorem ipsum dolor sit amet. Expert financial analysis to help you make informed decisions and optimize your business performance. Lorem ipsum dolor sit amet.",
     image: "/hero-alt.png",
+    link: "/layanan/cctv",
   },
   {
     title: "Wifi Coin Cleon",
     description:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum sit tempore voluptates dignissimos rerum facilis quod ipsa delectus, fuga accusantium doloribus ut obcaecati eveniet earum nesciunt quas recusandae ex placeat.",
     image: "/hero-alt.png",
+    link: "/layanan/wifi-coin-cleon",
   },
   {
     title: "Konsultan Jaringan Sekolah",
     description:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum sit tempore voluptates dignissimos rerum facilis quod ipsa delectus, fuga accusantium doloribus ut obcaecati eveniet earum nesciunt quas recusandae ex placeat. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde ex eum aliquam, fugit magnam iusto, obcaecati veniam nam eveniet illum harum perspiciatis nisi ullam et eaque quas nesciunt, temporibus ut.",
     image: "/hero-alt.png",
+    link: "/layanan/konsultan-jaringan-sekolah",
   },
 ];
 ---
@@ -60,6 +64,11 @@ const services = [
                 <p class="text-gray-600 text-center text-sm transition-colors duration-300 group-hover:text-gray-800">
                   {service.description}
                 </p>
+                <a
+                  href={service.link}
+                  class="mt-4 inline-block px-4 py-2 bg-[#339cd1] text-white rounded-lg transition-colors duration-300 hover:bg-textJudul">
+                  Selengkapnya
+                </a>
               </div>
             </div>
           ))
@@ -133,5 +142,5 @@ const services = [
         { passive: true }
       );
     });
-  });
+  });
 </script>
